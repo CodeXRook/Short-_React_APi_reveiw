@@ -1,6 +1,9 @@
 //APP.JS IS A COMPONENT THAT HANDLE DIFFERENT ROUTES
 import React, { Component } from 'react';// KEEP THIS LINE
- import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION
+import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION
+
+//PAGES TO IMPORT
+import Home from './containers/home';
 
 //WHERE GOING TO MAKE TWO PAGERS ROUTES BELOW
 //-> PAGE 1 LIST OF MUSIC VIDEOS
