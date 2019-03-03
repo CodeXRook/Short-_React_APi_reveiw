@@ -44,8 +44,12 @@ class Home extends React.Component {
         //CONSOLE LOG THIS.STATE 
         console.log(this.state);
 
-        return <h1>HELLO</h1>
-
+        return(
+            <ul>
+                {!}
+            </ul>
+        ) 
+            
 
         //MAP ALWAYS RETURN AN ARRAY
     //     return (
