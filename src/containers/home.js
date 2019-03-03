@@ -46,9 +46,11 @@ class Home extends React.Component {
 
         return(
             <ul>
-                {!}
+                {
+                    !this.state.videos ? loadingScreen : showVideoList
+                }
             </ul>
-        ) 
+        ); 
             
 
         //MAP ALWAYS RETURN AN ARRAY
