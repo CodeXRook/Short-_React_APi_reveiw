@@ -21,6 +21,7 @@ class Home extends React.Component {
             url: 'https://www.googleapis.com/youtube/v3/search',
             params:{
                 part: 'snippet',
+                maxResults: 8, 
 
             }
         })
