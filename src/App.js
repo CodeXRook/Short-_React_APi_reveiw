@@ -44,8 +44,7 @@ class App extends Component {
     </HashRouter>
      </>
       /* HashRouter can only have one child yet we have two, wrap react fragments around both siblings and make them one child in Hash, Check console log for errors*/
-
-    );
+    )
   }
 }
 

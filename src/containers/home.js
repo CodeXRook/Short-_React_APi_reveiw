@@ -1,5 +1,6 @@
 import React from 'react'; //Routes from app will connect here
 import axios from 'axios'; //AXIOS IS NEEDED TO MAKE API CALLS
+import {Link} from 'react-router-dom'; //ALWAYS IMPORT LINK TO LINK TO ANOTHER ROUTER PAGE
 
 // HOME PAGE NEEDS AN API CALL TO SHOW LIST OF YOUTUBE VIDEOS
 // HOME CLASS IS STATFUL REACT COMPONENT
@@ -44,22 +45,22 @@ onClickVideo =(id) =>{
     this.props.history.push('/video'+id);
 }
 
-    render() {
+    render(){
         //CONSOLE LOG THIS.STATE 
         console.log(this.state);
 
         //EVEN IF VIDEO IS NOT THERE YOU'LL GET MAP OF NULL
         // SHOW VIDEO NEEDS TO BE IN A FUNCTION THEN INVOKED INORDER TO WORK
         // STILL, YOU WILL ALWAYS NEED AN ARRAY, SO DON'T LEAVE IT AT NULL
-        const loadingScreen= <h1> Loading new videos</h1>;
-        const showVideoList= this.state.videos.map((e,i) => {
+        const loadingScreen= <h1>Loading new videos</h1>;
+        const showVideoList= this.state.videos.map((e, i) => {
             return(
                 <li key={i}>
                   <Link to={'/video/'+e.id.videoID}>
                 <img src ={e.snippet.thumbnails.medium.url} alt='' />
                   <h5>{e.snippet.tittle}</h5>
                 </Link>  
-                </li>
+             </li>
             )
         })
             
