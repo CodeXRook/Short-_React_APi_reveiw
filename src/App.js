@@ -21,7 +21,7 @@ class App extends Component {
     <HashRouter>
         
       <Route path ='/' exact component ={Home} /> 
-      <Route path ='/video/:id' exact component={} />
+      <Route path ='/video/:id' exact component={Video} />
     </HashRouter>
 
 
