@@ -18,6 +18,7 @@ class Home extends React.Component {
         //HERE IS MY API REQUEST
         axios({
             method: 'get',
+            url: 'https://www.googleapis.com/youtube/v3/search',
         })
 
     }
