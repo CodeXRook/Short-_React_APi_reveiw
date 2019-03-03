@@ -46,7 +46,11 @@ class Home extends React.Component {
         //CONSOLE LOG THIS.STATE 
         console.log(this.state);
 
-        const loadingScreen =<h1> Loading new videos</h1>;
+        const loadingScreen= <h1> Loading new videos</h1>;
+        const showVideoList= this.state.videos.map((e,i) => {
+            
+        })
+        
         
 
         return(
