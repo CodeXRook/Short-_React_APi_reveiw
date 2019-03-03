@@ -46,13 +46,17 @@ class Home extends React.Component {
         //CONSOLE LOG THIS.STATE 
         console.log(this.state);
 
+        //EVEN IF VIDEO IS NOT THERE YOU'LL GET MAP OF NULL
+        // SHOW VIDEO NEEDS TO BE IN A FUNCTION THEN INVOKED INORDER TO WORK
+        // STILL, YOU WILL ALWAYS NEED AN ARRAY, SO DON'T LEAVE IT AT NULL
         const loadingScreen= <h1> Loading new videos</h1>;
         const showVideoList= this.state.videos.map((e,i) => {
-            
+            return(
+                <li key={i}
+            )
         })
         
         
-
         return(
             <ul>
                 {
