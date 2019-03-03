@@ -20,7 +20,7 @@ class App extends Component {
       // USE EXACT IN ROUTES OR IT'LL SHOW UP ON EVERY PAGE
     <HashRouter>
         
-      <Route path ='/' exact component ={} /> 
+      <Route path ='/' exact component ={Home} /> 
       <Route path ='/video/:id' exact component={} />
     </HashRouter>
 
