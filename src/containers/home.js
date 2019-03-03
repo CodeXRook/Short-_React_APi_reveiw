@@ -40,9 +40,14 @@ class Home extends React.Component {
 
     }
 
+
+
     render() {
         //CONSOLE LOG THIS.STATE 
         console.log(this.state);
+
+        const loadingScreen =<h1> Loading new videos</h1>;
+        
 
         return(
             <ul>
