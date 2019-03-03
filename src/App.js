@@ -1,6 +1,6 @@
 //APP.JS IS A COMPONENT THAT HANDLE DIFFERENT ROUTES
 import React, { Component } from 'react';// KEEP THIS LINE
-import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION. Did not use link for tis review
+import {HashRouter, /*DID NOT USE LINK*/ Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION. Did not use link for tis review
 
 //PAGES TO IMPORT IN APP.JS
 import Home from './containers/home';
@@ -43,7 +43,7 @@ class App extends Component {
       </>
     </HashRouter>
      </>
-      /* HashRouter can only have one child yet we have two, wrap react fragments around both siblings and make them one child in Hash */
+      /* HashRouter can only have one child yet we have two, wrap react fragments around both siblings and make them one child in Hash, Check console log for errors*/
 
     );
   }
