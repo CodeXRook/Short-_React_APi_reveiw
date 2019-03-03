@@ -46,23 +46,21 @@ class Home extends React.Component {
 
         //MAP ALWAYS RETURN AN ARRAY
         return (
-            <>
-                 
+            <ul> 
                  {     //NEED CURLY BRACE TO SHOW JAVASCRIPT EXPRESSIONS, ONE BY ONE "I AND E" WILL CHANGE
                       //MAP HAS A CALL BACK OF e, i
                     this.state.video.map((e, i) => {
-                        return(
-                            <li>
-                                <img src={e.snippet.thumbnails.medium.url} />
+                        return( //NEED KEY TO DYNAMICLYY RENDER COMPONENTS
+                            <li key>
+                                <img src={e.snippet.thumbnails.medium.url} alt= ''/>
+                                <h5>{e.snippet.title}</h5>
 
                             </li>
                         )
                     })
                 
                 }
-            
-            
-            </>  
+             </ul>  
         /*    
         [
         //ARRAY OF JSX ELEMENTS CAN ONLY WORK IN JSX OTHEWISE USE (<> <h1></h1>  </>)
