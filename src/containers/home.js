@@ -51,15 +51,13 @@ class Home extends React.Component {
                       //MAP HAS A CALL BACK OF e, i
                     this.state.video.map((e, i) => {
                         return( //NEED KEY TO DYNAMICLYY RENDER COMPONENTS
-                            <li key>
-                                <img src={e.snippet.thumbnails.medium.url} alt= ''/>
+                            <li key={i}>
+                                <img src={e.snippet.thumbnails.medium.url} alt='' />
                                 <h5>{e.snippet.title}</h5>
-
                             </li>
                         )
                     })
-                
-                }
+                 }
              </ul>  
         /*    
         [
