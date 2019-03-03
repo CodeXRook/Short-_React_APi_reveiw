@@ -48,8 +48,16 @@ class Home extends React.Component {
         return (
             <>
                  
-                 {     //NEED CURLY BRACE TO SHOW JAVASCRIPT EXPRESSIONS
-                    this.state.video.map((e, i) => )
+                 {     //NEED CURLY BRACE TO SHOW JAVASCRIPT EXPRESSIONS, ONE BY ONE "I AND E" WILL CHANGE
+                      //MAP HAS A CALL BACK OF e, i
+                    this.state.video.map((e, i) => {
+                        return(
+                            <li>
+                                <img src={e.snippet.thumbnails.medium.url} />
+
+                            </li>
+                        )
+                    })
                 
                 }
             
