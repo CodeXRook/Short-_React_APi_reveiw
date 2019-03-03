@@ -43,9 +43,28 @@ class Home extends React.Component {
     render() {
         //CONSOLE LOG THIS.STATE 
         console.log(this.state);
-        return(
-            <h1>Home Page</h1>
-        )
+
+        //MAP ALWAYS RETURN AN ARRAY
+        return (
+            <>
+                 
+                 {     //NEED CURLY BRACE TO SHOW JAVASCRIPT EXPRESSIONS
+                    this.state.video.map((e, i) => )
+                
+                }
+            
+            
+            </>  
+        /*    
+        [
+        //ARRAY OF JSX ELEMENTS CAN ONLY WORK IN JSX OTHEWISE USE (<> <h1></h1>  </>)
+        <h1>Home Page</h1> ,
+            <h2> LOL </h2>,
+            <h3>word</h3>
+        ]
+        */
+        
+      )
     }
 }
 
