@@ -52,7 +52,11 @@ class Home extends React.Component {
         const loadingScreen= <h1> Loading new videos</h1>;
         const showVideoList= this.state.videos.map((e,i) => {
             return(
-                <li key={i}
+                <li key={i}>
+                <Link to={'/video/'+e.id.videoID}>
+                < img src ={e.snippet.thumbnails.medium.url} alt=' />
+                </Link>
+                </li>
             )
         })
         
