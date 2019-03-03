@@ -4,6 +4,7 @@ import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER IN
 
 //PAGES TO IMPORT
 import Home from './containers/home';
+import Video from './containers/video';
 
 //WHERE GOING TO MAKE TWO PAGERS ROUTES BELOW
 //-> PAGE 1 LIST OF MUSIC VIDEOS
