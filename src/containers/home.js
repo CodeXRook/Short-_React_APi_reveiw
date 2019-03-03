@@ -8,12 +8,12 @@ class Home extends React.Component {
     //PARTICULAR SEARCH TYPE
     
     state ={
-        searchTerm: 'skateboarding'
+        searchTerm: 'skateboarding',
+        videos: []// EMPTY WHEN THERE IS NO API REQUEST
     }
-
     //HOW DO WE GET THE SEARCH? AXIOS. IMPORT AXIOS.
+    //SHOW DATA IN RENDER (STORE IT IN STATE)
 
-    
     render() {
         return(
             <h1>Home Page</h1>
