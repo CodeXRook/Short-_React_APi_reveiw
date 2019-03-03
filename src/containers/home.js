@@ -31,6 +31,7 @@ class Home extends React.Component {
             }
         })
         //CONSOLE DATA SEE IF API REQUEST WORKS
+        // CHECK CONSOLE ON BROWSER PAGE VIA INSPECT PAGE
         .then(response => {
             console.log(response.data);
         })
