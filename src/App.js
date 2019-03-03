@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+//APP.JS IS A COMPONENT THAT HANDLE DIFFERENT ROUTES
+import React, { Component } from 'react';// KEEP THIS LINE
+ import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION
+
 
 
 class App extends Component {
   render() {
     return (
-    <h1>hello</h1>
+    <h1>HELLO WORLD</h1>
     );
   }
 }
