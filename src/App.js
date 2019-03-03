@@ -12,8 +12,9 @@ import Video from './containers/video';
 
 class App extends Component {
 
-//YOU'LL NEVER LOSE THE PROPS, BUT YOU'LL LOSE YOUR MIND
-  state ={
+//YOU'LL NEVER LOSE THE PROPS, BUT YOU'LL LOSE YOUR 
+//IF SIBLINGS NEED TO TALK TO EACH OTHER THEN WE CAN USE STATEFULL
+  state = {
 
   }
 
@@ -37,3 +38,10 @@ class App extends Component {
 }
 
 export default App;
+
+/* 
+LOCAL STORAGE FORCES YOU TO FOLLOW A D
+
+
+
+*/
