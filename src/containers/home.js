@@ -24,6 +24,7 @@ class Home extends React.Component {
                 maxResults: 8, 
                 videoDefinition: 'high',
                 type: 'video',
+                videoEmbeddable: 'true',
 
             }
         })
