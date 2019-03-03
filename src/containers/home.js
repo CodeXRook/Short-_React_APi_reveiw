@@ -16,7 +16,7 @@ class Home extends React.Component {
     // WHY COMPONENT DID MOUNT? SO IT CAN RENDER FIRST AND MAKE SURE STATE HAS BEEN SET
     componentDidMount(){
         //HERE IS MY API REQUEST
-        axios({// IS A JAVASRIPT OBJECT WE CALL, WE HAVE THE POWER TO CUSTOMIZE REQUEST ANYWAY WE WANT WITH AXIOS
+        axios({// IS A JAVASRIPT OBJECT WE CALL, WE HAVE THE POWER TO CUSTOMIZE REQUEST ANYWAY WE WANT WITH AXIOS TAKE AND REMOVE WHAT WE NEED FROM URL
             method: 'get',
             url: 'https://www.googleapis.com/youtube/v3/search',
             params:{
