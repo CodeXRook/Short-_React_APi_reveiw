@@ -34,6 +34,8 @@ class Home extends React.Component {
         // CHECK CONSOLE ON BROWSER PAGE VIA INSPECT PAGE
         .then(response => {
             console.log(response.data);
+            //SAVE INTO STATE
+            this.setState({ videos:response.data.items })
         })
 
     }
