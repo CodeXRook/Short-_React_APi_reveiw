@@ -2,7 +2,7 @@
 import React, { Component } from 'react';// KEEP THIS LINE
 import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION
 
-//PAGES TO IMPORT
+//PAGES TO IMPORT IN APP.JS
 import Home from './containers/home';
 import Video from './containers/video';
 
@@ -11,6 +11,12 @@ import Video from './containers/video';
 // -> PAGE 2 SHOWING THE YOUTUBE VIDEO
 
 class App extends Component {
+
+//YOU'LL NEVER LOSE THE PROPS, BUT YOU'LL LOSE YOUR MIND
+  state ={
+
+  }
+
   render() {
     return (
 
