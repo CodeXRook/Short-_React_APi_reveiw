@@ -35,12 +35,14 @@ class Home extends React.Component {
         .then(response => {
             console.log(response.data);
             //SAVE INTO STATE
-            this.setState({ videos:response.data.items })
+            this.setState({ videos:response.data.items })// ARRAY DATA TYPE VIDEOS AND ITEMS
         })
 
     }
 
     render() {
+        //CONSOLE LOG THIS.STATE 
+        console.log(this.state);
         return(
             <h1>Home Page</h1>
         )
