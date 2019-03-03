@@ -7,7 +7,15 @@ import React, { Component } from 'react';// KEEP THIS LINE
 class App extends Component {
   render() {
     return (
-    <h1>HELLO WORLD</h1>
+
+
+      //EACH ROUTE IS A DIFFERENT CHANNEL
+      //CHANNEL DEPENDS AKA URL PAGE
+    <HashRouter>
+
+
+
+    </HashRouter>
     );
   }
 }
