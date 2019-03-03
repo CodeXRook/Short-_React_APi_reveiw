@@ -23,6 +23,7 @@ class Home extends React.Component {
                 part: 'snippet',
                 maxResults: 8, 
                 videoDefinition: 'high',
+                type: 'video',
 
             }
         })
