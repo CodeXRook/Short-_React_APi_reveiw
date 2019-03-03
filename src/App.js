@@ -10,15 +10,18 @@ class App extends Component {
   render() {
     return (
 
-
+    <>
       //EACH ROUTE IS A DIFFERENT CHANNEL
       //CHANNEL DEPENDS AKA URL PAGE
       // USE EXACT IN ROUTES OR IT'LL SHOW UP ON EVERY PAGE
     <HashRouter>
         
-      <Route path ='/' exact component ={} />
+      <Route path ='/' exact component ={} /> 
       <Route path ='/video/:id' exact component={} />
     </HashRouter>
+
+
+     </>
     );
   }
 }
