@@ -25,11 +25,14 @@ class Home extends React.Component {
                 videoDefinition: 'high',
                 type: 'video',
                 videoEmbeddable: 'true',
-                key:// THIS IS WHER YOUR API KEY GOES. WON'T LOAD ANY IMAGES WITHOUT KEY
+                key: ,// THIS IS WHERE YOUR API KEY GOES. WON'T LOAD ANY IMAGES WITHOUT KEY
                 q: this.state.searchTerm,
                 pageToken: ''
-
             }
+        })
+        //CONSOLE DATA SEE IF API REQUEST WORKS
+        .then(response => {
+            console.log(response.data);
         })
 
     }
