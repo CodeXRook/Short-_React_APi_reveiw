@@ -40,7 +40,9 @@ class Home extends React.Component {
 
     }
 
-
+onClinkVideo =(id) =>{
+    this.props.history.push('/video'+id)
+}
 
     render() {
         //CONSOLE LOG THIS.STATE 
@@ -55,8 +57,8 @@ class Home extends React.Component {
                 <li key={i}>
                   <Link to={'/video/'+e.id.videoID}>
                 <img src ={e.snippet.thumbnails.medium.url} alt='' />
-                  <h5>{e.snippet.tittle}</5>
-                </Link>
+                  <h5>{e.snippet.tittle}</h5>
+                </Link>  
                 </li>
             )
         })
@@ -71,7 +73,7 @@ class Home extends React.Component {
         ); 
             
 
-        //MAP ALWAYS RETURN AN ARRAY
+        {/* //MAP ALWAYS RETURN AN ARRAY
     //     return (
     //         <ul> 
     //              {     //NEED CURLY BRACE TO SHOW JAVASCRIPT EXPRESSIONS, ONE BY ONE "I AND E" WILL CHANGE
@@ -95,8 +97,8 @@ class Home extends React.Component {
     //     ]
     //     */
         
-    //   )
-    }
+    //   ) */}
+   }
 }
 
 export default Home;
