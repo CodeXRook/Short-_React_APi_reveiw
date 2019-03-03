@@ -41,7 +41,7 @@ class Home extends React.Component {
     }
 
 onClinkVideo =(id) =>{
-    this.props.history.push('/video'+id)
+    this.props.history.push('/video'+id);
 }
 
     render() {
@@ -73,8 +73,8 @@ onClinkVideo =(id) =>{
         ); 
             
 
-        {/* //MAP ALWAYS RETURN AN ARRAY
-    //     return (
+     /* //MAP ALWAYS RETURN AN ARRAY
+    //     return (        
     //         <ul> 
     //              {     //NEED CURLY BRACE TO SHOW JAVASCRIPT EXPRESSIONS, ONE BY ONE "I AND E" WILL CHANGE
     //                   //MAP HAS A CALL BACK OF e, i
