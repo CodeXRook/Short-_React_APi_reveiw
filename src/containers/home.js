@@ -27,6 +27,7 @@ class Home extends React.Component {
                 videoEmbeddable: 'true',
                 key:// THIS IS WHER YOUR API KEY GOES. WON'T LOAD ANY IMAGES WITHOUT KEY
                 q: this.state.searchTerm,
+                pageToken: ''
 
             }
         })
