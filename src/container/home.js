@@ -1,6 +1,6 @@
 import React from 'react'; //Routes from app will connect here
 
-// HOME CLASS REACT COMPONENT
+// HOME CLASS IS STATFUL REACT COMPONENT
 class Home extends React.Component {
 
     render() {
