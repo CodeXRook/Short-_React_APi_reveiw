@@ -53,8 +53,9 @@ class Home extends React.Component {
         const showVideoList= this.state.videos.map((e,i) => {
             return(
                 <li key={i}>
-                <Link to={'/video/'+e.id.videoID}>
+                <Link to={'/video/'+e.id.videoID}> //
                 < img src ={e.snippet.thumbnails.medium.url} alt=' />
+                  <h5>{e.snippet.tittle}</5>
                 </Link>
                 </li>
             )
