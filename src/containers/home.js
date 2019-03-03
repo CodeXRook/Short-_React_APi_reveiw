@@ -40,7 +40,7 @@ class Home extends React.Component {
 
     }
 
-onClinkVideo =(id) =>{
+onClickVideo =(id) =>{
     this.props.history.push('/video'+id);
 }
 
@@ -62,8 +62,7 @@ onClinkVideo =(id) =>{
                 </li>
             )
         })
-        
-        
+            
         return(
             <ul>
                 {
@@ -72,7 +71,6 @@ onClinkVideo =(id) =>{
             </ul>
         ); 
             
-
      /* //MAP ALWAYS RETURN AN ARRAY
     //     return (        
     //         <ul> 
