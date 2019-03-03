@@ -8,7 +8,7 @@ class Home extends React.Component {
     //PARTICULAR SEARCH TYPE
     
     state ={
-        searchTerm: 'skateboarding',
+        searchTerm: 'skateboarding',// CAN NAME YOUR SEARCH WHATEVER, REMEMBER TO PASS THAT STAT IN Q
         videos: []// EMPTY WHEN THERE IS NO API REQUEST
     }
     //HOW DO WE GET THE SEARCH? AXIOS. IMPORT AXIOS.
@@ -25,7 +25,8 @@ class Home extends React.Component {
                 videoDefinition: 'high',
                 type: 'video',
                 videoEmbeddable: 'true',
-                key:// THIS IS WHER YOUR API KEY GOES,
+                key:// THIS IS WHER YOUR API KEY GOES. WON'T LOAD ANY IMAGES WITHOUT KEY
+                q: this.state.searchTerm,
 
             }
         })
