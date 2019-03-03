@@ -1,6 +1,6 @@
 //APP.JS IS A COMPONENT THAT HANDLE DIFFERENT ROUTES
 import React, { Component } from 'react';// KEEP THIS LINE
-import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION
+import {HashRouter, Link, Route} from 'react-router-dom'; //INTERGRATE ROUTER INTO APPLICATION. Did not use link for tis review
 
 //PAGES TO IMPORT IN APP.JS
 import Home from './containers/home';
@@ -12,6 +12,14 @@ import Video from './containers/video';
 
 class App extends Component {
 
+
+  //as soon as you app DidMount
+  /*  
+  compoundDidMount() {
+    Storage.init();
+  }
+  */
+
 //YOU'LL NEVER LOSE THE PROPS, BUT YOU'LL LOSE YOUR 
 //IF SIBLINGS NEED TO TALK TO EACH OTHER THEN WE CAN USE STATEFULL
   state = {
@@ -21,18 +29,22 @@ class App extends Component {
   render() {
     return (
 
+
+      /*EACH ROUTE IS A DIFFERENT CHANNEL
+      CHANNEL DEPENDS AKA URL PAGE
+      USE EXACT IN ROUTES OR IT'LL SHOW UP ON EVERY PAGE
+      */
+
     <>
-      //EACH ROUTE IS A DIFFERENT CHANNEL
-      //CHANNEL DEPENDS AKA URL PAGE
-      // USE EXACT IN ROUTES OR IT'LL SHOW UP ON EVERY PAGE
     <HashRouter>
-        
+        <>
       <Route path ='/' exact component ={Home} /> 
       <Route path ='/video/:id' exact component={Video} />
+      </>
     </HashRouter>
-
-
      </>
+      /* HashRouter can only have one child yet we have two, wrap react fragments around both siblings and make them one child in Hash */
+
     );
   }
 }
@@ -48,6 +60,7 @@ EVERY COMPONENT TALKS WITH
   Storage.js
 
   Storage ={}
+  Storage.init() // Once App did mount it'll have data, check lines 16-19
   Storage.getListOfUser()
   Storage.getListtOfUserFeed(username)
   Storage.CreateNewUser()
