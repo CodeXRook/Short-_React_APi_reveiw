@@ -15,6 +15,10 @@ class Home extends React.Component {
     //SHOW DATA IN RENDER (STORE IT IN STATE)
     // WHY COMPONENT DID MOUNT? SO IT CAN RENDER FIRST AND MAKE SURE STATE HAS BEEN SET
     componentDidMount(){
+        //HERE IS MY API REQUEST
+        axios({
+            method: 'get',
+        })
 
     }
 
