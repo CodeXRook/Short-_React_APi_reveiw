@@ -13,6 +13,10 @@ class Home extends React.Component {
     }
     //HOW DO WE GET THE SEARCH? AXIOS. IMPORT AXIOS.
     //SHOW DATA IN RENDER (STORE IT IN STATE)
+    // WHY COMPONENT DID MOUNT? SO IT CAN RENDER FIRST AND MAKE SURE STATE HAS BEEN SET
+    componentDidMount(){
+
+    }
 
     render() {
         return(
